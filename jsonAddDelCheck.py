@@ -1,6 +1,7 @@
 import json
 import os
-class JsonObj():#json related
+import time
+class JsonObj():#json related,such as add/modify ,delete,check and so on
 	def __init__(self,jsonFileName):
 		self.jsonFileName = jsonFileName
 		
@@ -31,5 +32,16 @@ class JsonObj():#json related
 		jsDict = self.jsLoad()
 		return jsDict[jsKey]
 		
-class TimeManage():
-	
+class TimeCounter():
+	def __init_(self):
+		self.alarmTimeList = {}
+	def getLocalTime(self):
+		return time.strftime("%H:%M", time.localtime())
+		
+	def getLocalDate(self):
+		return time.strftime("%Y-%m-%d", time.localtime())
+	def timeDelay(self,delayTime):
+		
+new = TimeCounter()
+print(new.getLocalTime())
+print(new.getLocalDate())

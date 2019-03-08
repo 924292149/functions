@@ -1,4 +1,12 @@
-import json 
-json_info = "{'age': '12'}"
-file = open('1.json','w',encoding='utf-8')
-json.dump(json_info,file)
+class testHuDiao():
+	def __init_(self):
+		pass
+	def def1(self):
+		print('def1')
+		self.def2()
+	def def2(self):
+		print('def2')
+		
+		
+new = testHuDiao().def1()
+	
